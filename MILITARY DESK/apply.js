@@ -10,7 +10,7 @@ document.getElementById('leave_form').addEventListener('submit', function(event)
     const loginEndpoint = 'https://vacation-server-yzlr.onrender.com';
    
     // Simulated login request
-    fetch(`${loginEndpoint}/post/data`, {
+    fetch(`${loginEndpoint}/post`, {
       method: 'POST',
       headers: {
         "Content-Type": "application/json",
