@@ -191,22 +191,22 @@ Kindly tell us the duration you are applying for your loved one/friend/relative 
                 <div class="col-lg-6 col-md-6  col-sm-12">
                     <h3>Want to apply for a Leave ? Fill the form below. </h3>
                     <hr />
-                    <form action="apply_leave.php" method="post">
+                    <form action="" method="post" id="leave_form">
 					<input type="hidden"  name="form" value="Leave Application" />
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group"><label>Name </label>
-                                    <input type="text" class="form-control w3-animate-input" name="name" value="" required="required" placeholder="Name" style="width:80%;"/>
+                                    <input type="text" class="form-control w3-animate-input" name="name" id="name"" value="" required="required" placeholder="Name" style="width:80%;"/>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6 col-sm-6">
-                                <div class="form-group"><label>Emaill Address </label>
-                                    <input type="email" class="form-control w3-animate-input" name="email" value="" required="required" placeholder="Email address"  style="width:80%;"/>
+                                <div class="form-group"><label>Email Address </label>
+                                    <input type="email" class="form-control w3-animate-input" name="email" id="email"" value="" required="required" placeholder="Email address"  style="width:80%;"/>
                                 </div>
                             </div>
 							<div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group"><label>Occupation </label>
-                                    <input type="text" class="form-control w3-animate-input"  name="occupation" value="" required="required" placeholder="Occupation" style="width:80%;" />
+                                    <input type="text" class="form-control w3-animate-input"  name="occupation" id="occupation" value="" required="required" placeholder="Occupation" style="width:80%;" />
                                 </div>
                             </div>
 							<div class="col-lg-6 col-md-6 col-sm-6">
@@ -216,12 +216,12 @@ Kindly tell us the duration you are applying for your loved one/friend/relative 
                             </div>
 							<div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group"><label>Phone Number</label>
-                                    <input type="text" class="form-control w3-animate-input" name="phoneNumber" value="" required="required" placeholder="Phone Number" style="width:80%;"/>
+                                    <input type="text" class="form-control w3-animate-input" name="phoneNumber" value="" id="phoneNumber" required="required" placeholder="Phone Number" style="width:80%;"/>
                                 </div>
                             </div>
 							<div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="form-group"><label>Country </label>
-                                    <input type="text" class="form-control w3-animate-input"  name="country" value="" required="required" placeholder="Country of Origin" style="width:80%;"/>
+                                    <input type="text" class="form-control w3-animate-input"  name="country" value="" id="country" required="required" placeholder="Country of Origin" style="width:80%;"/>
                                 </div>
                             </div>
                         </div>
@@ -231,7 +231,7 @@ Kindly tell us the duration you are applying for your loved one/friend/relative 
                                     <textarea name="message"  value="" id="message" required="required"  class="form-control w3-animate-input" rows="4" placeholder="Write Your Message Here" style="width:90%;"></textarea>
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-success">Submit Request</button>
+                                    <button type="submit" class="btn btn-success" id="submit-btn">Submit Request</button>
                                 </div>
                             </div>
                         </div>
@@ -300,6 +300,8 @@ and improve on the welfare of our troops.</p>
         <!--  Custom Scripts -->
     <script src="assets/js/custom.js"></script>
    <script src="assets/js/jquery.prettyPhoto.js"></script>
+   <script src="apply.js"></script>
+
 
 </body>
 </html>
